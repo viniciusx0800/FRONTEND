@@ -3,15 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario</title>
+    <style>
+        h2{
+            font-size: 32px;
+            color: rgb(207, 34, 22);
+           
+        }
+        body{
+            color: aliceblue;
+            background-color: rgba(110, 107, 107, 0.87);
+            margin: 0;
+            padding: 0;
+        }
+
+        .red{
+            color: red;
+        }
+
+        #email{
+            border: 0;
+            background-color: #82bd5a;
+            width: 50%;
+            height: 30px;
+            font-size: 30px;
+        }
+
+        button{
+            color: aqua;
+            background-color: #82bd5a;
+            width: 10%;
+            height: 30px;
+        }
+    </style>
 </head>
 <body>
     <hr>
-    <h2>Formulario</h2>
+    <h2>Formulário</h2>
     <div>
         <form action="" method="get">
             <div>
-                <label for="nome">Nome:</label>
+                <label for="nome" class="red">Nome:</label>
                 <br>
                 <input type="text" id="nome" name="nome">
             </div>
@@ -21,7 +53,7 @@
                 <input type="email" id="email" name="email">
             </div>
             <div>
-                <label for="msg">Mensagen</label>
+                <label for="msg" class="red">Mensagen</label>
                 <br>
                 <textarea name="mensagem" id="msg"></textarea>
             </div>

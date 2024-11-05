@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <style>
+        body{
+            background-color: blue;
+        }
+
+        .flex{
+            display: flex;    
+        }
+
+        .item{
+            width: 80px;
+            height: 40px;
+            background-color: rgb(123, 64, 161);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(9, 250, 41);
+            font-size: 30px;
+            margin: 10px;
+            padding: 10px;
+        }
+        .item:first-child:hover,.item:last-child:hover{
+            background-color: rgb(66, 165, 165);
+        }
+        .item:hover{
+            background-color: rgb(29, 30, 99);
+            cursor: pointer;
+        }
+        input:focus{
+            color: aquamarine;
+            border-color: red;
+            background: rgb(83, 80, 80);
+        }
+
+        @media(max-width: 450px){
+            body{
+            background-color: green;
+            }
+            .flex{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <hr>
+    <h2>Flex box</h2>
+    <div class="flex">
+        <div class="item">a</div>
+        <div class="item">b</div>
+        <div class="item">c</div>
+        <div class="item">b</div>
+        <div class="item">c</div>
+    </div>
+    <div>
+        <input type="text">
+    </div>
+</body>
+</html>
